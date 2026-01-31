@@ -7,4 +7,3 @@ pin '@hotwired/stimulus-loading', to: 'stimulus-loading.js'
 pin_all_from 'app/javascript/controllers', under: 'controllers'
 pin 'lexxy', to: 'lexxy.js'
 pin '@rails/activestorage', to: 'activestorage.esm.js'
-pin '@rails/actiontext', to: '@rails--actiontext.js' # @8.1.200

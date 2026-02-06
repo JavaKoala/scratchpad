@@ -7,9 +7,13 @@
   </div>
 
   <div>
-    <%= form_with model: @note do |form| %>
+    <%= form_with model: @note, id: 'scratch-pad-form' do |form| %>
       <%= form.rich_textarea :content %>
-      <%= form.submit 'Save', class: 'rounded-md bg-blue-600 px-3 py-2 mt-4 text-sm font-semibold text-white shadow-xs hover:bg-blue-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600' %>
     <% end %>
+    <div class="flex justify-between mb-8">
+      <%= button_tag 'Save', type: 'submit', form: 'scratch-pad-form', class: 'rounded-md bg-blue-600 px-3 py-2 mt-4 text-sm font-semibold text-white shadow-xs hover:bg-blue-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600' %>
+      <%= button_to 'Clear', note_path(@note), method: :patch, params: { note: { content: '<p><br></p>'} }, class: 'rounded-md bg-white px-3 py-2 mt-4 text-sm font-semibold text-gray-900 shadow-xs inset-ring inset-ring-gray-300 hover:bg-gray-50'
+      %>
+    </div>
   </div>
 </div>

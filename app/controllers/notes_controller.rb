@@ -7,6 +7,7 @@ class NotesController < ApplicationController
     note = Note.find(1)
     note.update!(note_params)
 
+    note.broadcast_update_to 'note_1', partial: 'notes/note', locals: { note: note }
     redirect_to notes_path
   end
 

@@ -39,6 +39,9 @@ gem 'image_processing', '~> 1.2'
 # Use Lexxy for rich text editor
 gem 'lexxy', '~> 0.7.4.beta'
 
+# Use solid cable for Action Cable
+gem 'solid_cable', '~> 3.0'
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem 'debug', platforms: %i[mri windows], require: 'debug/prelude'

@@ -1,5 +1,9 @@
 # Scratchpad — minimal collaborative note app
 
+<img alt="Scratchpad screenshot" src="docs/assets/scratchpad.png">
+
+---
+
 A small Rails 8.1 application that demonstrates a collaborative single-note "scratchpad" using:
 - Hotwire (Turbo + Stimulus)
 - Action Cable for real-time updates
@@ -28,7 +32,7 @@ Steps:
 
 1. Clone and enter the repo
    ```bash
-   git clone <repo-url>
+   git clone https://github.com/JavaKoala/scratchpad.git
    cd scratchpad
    ```
 2. Install gems and prepare DB (recommended)
@@ -54,13 +58,7 @@ Notes:
   ```bash
   bundle exec rspec
   ```
-- Lint and static checks:
-  ```bash
-  bin/rubocop
-  bin/brakeman --no-pager
-  bin/bundler-audit
-  bin/importmap audit
-  ```
+
 - Run CI
   ```bash
   bin/ci

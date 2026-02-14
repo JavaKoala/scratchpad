@@ -1,3 +1,7 @@
 <div class="border border-[oklch(85%_0_0)] rounded-md p-2.5">
-  <%= note.content %>
+  <% if note.content.present? %>
+    <%= note.content %>
+  <% else %>
+    &nbsp;
+  <% end %>
 </div>

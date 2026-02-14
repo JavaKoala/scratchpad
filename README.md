@@ -16,7 +16,7 @@ A small Rails 8.1 application that demonstrates a collaborative single-note "scr
 
 - Single collaborative note (seeded at `db/seeds.rb`).
 - Rich-text editor (Lexxy / Action Text) and live broadcasting via Action Cable.
-- Rails 8.1, Ruby 4.0.1, SQLite (local storage for development).
+- Rails 8.1, Ruby 4.0.1, SQLite (local DB for development).
 - Security & linting configured: `brakeman`, `bundler-audit`, `rubocop` and CI workflow.
 
 ---

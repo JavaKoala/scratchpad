@@ -37,12 +37,11 @@ Steps:
    ```
 2. Install gems and prepare DB (recommended)
    ```bash
-   bundle install
-   bin/setup        # installs deps, prepares DB and starts dev server (optional)
+   bin/setup --skip-server  # installs deps, prepares DB
    ```
 3. Start in development (hot reload + Tailwind watcher)
    ```bash
-   bin/dev           # uses Procfile.dev (web + tailwindcss:watch)
+   bin/dev  # uses Procfile.dev (web + tailwindcss:watch)
    ```
 4. Open the app: http://localhost:3000 (root routes to the scratchpad)
 

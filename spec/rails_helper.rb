@@ -1,3 +1,9 @@
+require 'simplecov'
+SimpleCov.start do
+  enable_coverage :branch
+  SimpleCov.coverage_dir('spec/coverage')
+end
+
 # This file is copied to spec/ when you run 'rails generate rspec:install'
 require 'spec_helper'
 ENV['RAILS_ENV'] ||= 'test'
@@ -75,5 +81,15 @@ Shoulda::Matchers.configure do |config|
   config.integrate do |with|
     with.test_framework :rspec
     with.library :rails
+  end
+end
+
+if ENV['NO_SANDBOX'] == 'true'
+  Capybara.register_driver :selenium_chrome_headless do |app|
+    options = Selenium::WebDriver::Chrome::Options.new(
+      args: %w[headless no-sandbox disable-gpu]
+    )
+
+    Capybara::Selenium::Driver.new(app, browser: :chrome, options: options)
   end
 end

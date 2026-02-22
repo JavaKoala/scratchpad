@@ -17,7 +17,7 @@ pipeline {
                   source /etc/profile
                   rvm use 4.0.1
                   bundle install
-                  bin/ci
+                  NO_SANDBOX=true bin/ci
                 """
             }
         }

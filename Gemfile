@@ -67,5 +67,9 @@ group :development do
 end
 
 group :test do
+  gem 'capybara', '~> 3.40'
+  gem 'selenium-webdriver', '~> 4.41'
   gem 'shoulda-matchers', '~> 7.0'
+  gem 'simplecov', require: false
+  gem 'webmock'
 end

@@ -13,6 +13,6 @@ class NoteTool < ApplicationTool
   end
 
   def call
-    Note.find(1).content.to_plain_text
+    Note.find(1).content.to_trix_html
   end
 end

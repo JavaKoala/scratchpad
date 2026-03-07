@@ -102,6 +102,8 @@ The repository includes a production-ready `Dockerfile`.
 
 ## MCP Server (experimental)
 
+Install `mcp-remote` https://www.npmjs.com/package/mcp-remote
+
 Add the following to your Claude desktop configuration, including your server url
 
 ```

@@ -18,6 +18,7 @@ A small Rails 8.1 application that demonstrates a collaborative single-note "scr
 - Rich-text editor (Lexxy / Action Text) and live broadcasting via Action Cable.
 - Rails 8.1, Ruby 4.0.1, SQLite (local DB for development).
 - Security & linting configured: `brakeman`, `bundler-audit`, `rubocop` and CI workflow.
+- MCP Server (experimental)
 
 ---
 
@@ -96,6 +97,32 @@ The repository includes a production-ready `Dockerfile`.
 - Uses local disk for Active Storage by default (`config/storage.yml`).
 - For production, set `RAILS_MASTER_KEY` and a persistent database/storage.
 - The app is ready to be containerized; see `Dockerfile` for production build steps.
+
+---
+
+## MCP Server (experimental)
+
+Add the following to your Claude desktop configuration, including your server url
+
+```
+{
+  "mcpServers": {
+    "scratchpad-local": {
+      "command": "npx",
+      "args": [
+        "mcp-remote",
+        "http://localhost:3000/mcp/sse"
+      ]
+    }
+  },
+  ...other settings
+}
+```
+<img alt="Claude screenshot" src="docs/assets/claude-settings.png">
+
+Then ask Claude to get your note
+
+<img alt="Claude conversation" src="docs/assets/claude-get-note.png">
 
 ---
 

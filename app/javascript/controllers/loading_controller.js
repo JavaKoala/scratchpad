@@ -1,9 +1,9 @@
 import { Controller } from "@hotwired/stimulus"
 
 export default class extends Controller {
-  static targets = [ "refresh" ]
+  static targets = [ "note" ]
 
   refresh() {
-    this.refreshTarget.classList.add("opacity-50")
+    this.noteTarget.classList.add("opacity-50")
   }
 }

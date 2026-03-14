@@ -4,7 +4,7 @@
   </div>
 
   <%= turbo_stream_from dom_id(@note) %>
-  <div id=<%= dom_id(@note) %> data-loading-target="refresh">
+  <div id=<%= dom_id(@note) %> data-loading-target="note">
     <%= render partial: 'notes/note', locals: { note: @note }%>
   </div>
 

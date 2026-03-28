@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
-gem 'rails', '~> 8.1.2'
+gem 'rails', '~> 8.1.3'
 # The modern asset pipeline for Rails [https://github.com/rails/propshaft]
 gem 'propshaft'
 # Use sqlite3 as the database for Active Record
@@ -34,7 +34,7 @@ gem 'bootsnap', require: false
 gem 'image_processing', '~> 1.2'
 
 # Use Lexxy for rich text editor
-gem 'lexxy', '~> 0.8.0.beta'
+gem 'lexxy', '~> 0.9.1.beta'
 
 # Use solid cable for Action Cable
 gem 'solid_cable', '~> 3.0'

@@ -15,7 +15,7 @@ pipeline {
                 sh """#!/bin/bash
                   export HOME="/var/snap/jenkins/current"
                   source /etc/profile
-                  rvm use 4.0.1
+                  rvm use 4.0.5
                   bundle install
                   NO_SANDBOX=true bin/ci
                 """

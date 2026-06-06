@@ -34,7 +34,7 @@ gem 'bootsnap', require: false
 gem 'image_processing', '~> 2.0'
 
 # Use Lexxy for rich text editor
-gem 'lexxy', '~> 0.9.14.beta'
+gem 'lexxy', '0.9.14.beta'
 
 # Use solid cable for Action Cable
 gem 'solid_cable', '~> 4.0'

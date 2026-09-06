@@ -32,6 +32,7 @@ gem 'bootsnap', require: false
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 gem 'image_processing', '~> 2.0'
+gem 'ruby-vips', '~> 2.3'
 
 # Use Lexxy for rich text editor
 gem 'lexxy', '0.9.14.beta'

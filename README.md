@@ -28,6 +28,7 @@ Prerequisites:
 - Ruby: **4.0.6** (see `.ruby-version`)
 - SQLite3 (local DB used)
 - Bundler (Bundler is used from the RubyGems bundle)
+- vips `brew install vips`
 
 Steps:
 

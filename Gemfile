@@ -32,9 +32,10 @@ gem 'bootsnap', require: false
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 gem 'image_processing', '~> 2.0'
+gem 'ruby-vips', '~> 2.3'
 
 # Use Lexxy for rich text editor
-gem 'lexxy', '0.9.14.beta'
+gem 'lexxy', '0.9.31'
 
 # Use solid cable for Action Cable
 gem 'solid_cable', '~> 4.0'
@@ -72,7 +73,7 @@ end
 group :test do
   gem 'capybara', '~> 3.40'
   gem 'selenium-webdriver', '~> 4.41'
-  gem 'shoulda-matchers', '~> 7.0'
+  gem 'shoulda-matchers', '~> 8.0'
   gem 'simplecov', require: false
   gem 'webmock'
 end

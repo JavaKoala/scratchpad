@@ -16,7 +16,7 @@ A small Rails 8.1 application that demonstrates a collaborative single-note "scr
 
 - Single collaborative note (seeded at `db/seeds.rb`).
 - Rich-text editor (Lexxy / Action Text) and live broadcasting via Action Cable.
-- Rails 8.1, Ruby 4.0.5, SQLite (local DB for development).
+- Rails 8.1, Ruby 4.0.6, SQLite (local DB for development).
 - Security & linting configured: `brakeman`, `bundler-audit`, `rubocop` and CI workflow.
 - MCP Server (experimental)
 
@@ -25,9 +25,10 @@ A small Rails 8.1 application that demonstrates a collaborative single-note "scr
 ## Quick start — development (macOS)
 
 Prerequisites:
-- Ruby: **4.0.5** (see `.ruby-version`)
+- Ruby: **4.0.6** (see `.ruby-version`)
 - SQLite3 (local DB used)
 - Bundler (Bundler is used from the RubyGems bundle)
+- vips `brew install vips`
 
 Steps:
 

@@ -1,3 +1,13 @@
+server = MCP::Server.new(
+  name: 'my_server',
+  title: 'Example Server Display Name',
+  version: '1.0.0',
+  instructions: 'Use the tools of this server as a last resort',
+  tools: [GreetingTool],
+  prompts: []
+)
+transport = MCP::Server::Transports::StreamableHTTPTransport.new(server)
+
 Rails.application.routes.draw do
   resources :notes, only: %i[index update]
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
@@ -12,4 +22,6 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root 'notes#index'
+
+  mount transport => '/mcp'
 end

@@ -40,9 +40,6 @@ gem 'lexxy', '0.9.31'
 # Use solid cable for Action Cable
 gem 'solid_cable', '~> 4.0'
 
-# Use fast-mcp for MCP server
-gem 'fast-mcp', '~> 1.6'
-
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem 'debug', platforms: %i[mri windows], require: 'debug/prelude'

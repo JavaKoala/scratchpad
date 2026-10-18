@@ -35,7 +35,7 @@ gem 'image_processing', '~> 2.0'
 gem 'ruby-vips', '~> 2.3'
 
 # Use Lexxy for rich text editor
-gem 'lexxy', '0.9.31'
+gem 'lexxy', '~> 1.0'
 
 # Use solid cable for Action Cable
 gem 'solid_cable', '~> 4.0'

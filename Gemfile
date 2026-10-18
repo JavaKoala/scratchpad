@@ -38,7 +38,7 @@ gem 'ruby-vips', '~> 2.3'
 gem 'lexxy', '~> 1.0'
 
 # Use solid cable for Action Cable
-gem 'solid_cable', '~> 4.0'
+gem 'solid_cable', '~> 4.1'
 
 # Use fast-mcp for MCP server
 gem 'fast-mcp', '~> 1.6'
